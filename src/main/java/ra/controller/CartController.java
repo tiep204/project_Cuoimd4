@@ -50,6 +50,7 @@ public class CartController {
     }
 
     @GetMapping("/{cartId}")
+    @PreAuthorize("hasRole('USER')")
     public Cart getByIdCart(@PathVariable("cartId") int cartId) {
         return cartService.findById(cartId);
     }

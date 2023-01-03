@@ -15,6 +15,4 @@ public interface CartService {
     List<Cart> findAllCart(int id);
     Page<Cart> sortByNameAndPagination(Pageable pageable);
     List<Cart> findUserById(int userId);
-
-
 }

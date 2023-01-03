@@ -125,14 +125,13 @@ public class OrderController {
            }
            orders.setTotalAmount(totalAmount);
            orderService.saveOrder(orders);
-           return ResponseEntity.ok("Chuc mung ban da thanh cong");
+           return ResponseEntity.ok("Chuc mung ban da mua thanh cong");
        }catch (Exception e){
            e.printStackTrace();
-           return ResponseEntity.ok("Ban da that bai");
+           return ResponseEntity.ok("Ban da mua that bai");
        }
-
-
     }
+
 
 
 }
